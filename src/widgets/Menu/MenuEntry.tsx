@@ -27,7 +27,7 @@ const MenuEntry = styled.div<Props>`
   cursor: pointer;
   display: flex;
   align-items: center;
-  height: ${MENU_ENTRY_HEIGHT}px;
+  height: 36px;
   padding: ${({ secondary }) => (secondary ? "0 32px" : "0 16px")};
   margin: ${({ secondary }) => (secondary ? "5 15px" : "5 15px")};
   font-size: ${({ secondary }) => (secondary ? "12px" : "13px")};
@@ -48,6 +48,10 @@ const MenuEntry = styled.div<Props>`
   }
 
   &:hover {
+    background-color: #0f172a;
+  }
+
+  &:active {
     background-color: #0f172a;
   }
 
