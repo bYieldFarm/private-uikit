@@ -24,7 +24,7 @@ const Container = styled.div`
   background-color: ${({ theme }) => theme.nav.background};
   border-top: solid 2px rgba(133, 133, 133, 0.1);
   background-color: #1c2c3c;
-  height: 350px;
+  height: 300px;
   align-self: center;
 `;
 
@@ -46,9 +46,23 @@ const TextPrimary = styled(Text)`
   align-items: center;
   text-align: center;
   justify-content: space-between;
-  font-size: 14px;
+  font-size: 16px;
   color: #FFFFFF;
   padding: 0 8px;
+  flex-direction: column;
+`;
+
+const TextSecondary = styled(Text)`
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 600;
+  color: #14A098;
+  padding: 0 8px;
+  flex-direction: column;
+  margin-top: 4px;
 `;
 
 const SettingsEntry = styled.div`
@@ -65,6 +79,7 @@ const SocialEntry = styled.div`
   justify-content: space-between;
   height: ${MENU_ENTRY_HEIGHT}px;
   padding: 0 16px;
+  flex-direction: column;
 `;
 
 const PanelFooter: React.FC<Props> = ({
