@@ -24,6 +24,7 @@ const Container = styled.div`
   background-color: ${({ theme }) => theme.nav.background};
   border-top: solid 2px rgba(133, 133, 133, 0.1);
   background-color: #1c2c3c;
+  height: 350px
 `;
 
 const PriceLink = styled.a`
@@ -78,8 +79,7 @@ const PanelFooter: React.FC<Props> = ({
 
   return (
     <Container>
-      <SocialEntry>
-        {cakePriceUsd ? (
+              {cakePriceUsd ? (
           <PriceLink href={priceLink} target="_blank">
             <PancakeRoundIcon width="24px" mr="8px" />
             <Text color="textSubtle" bold>{`$${cakePriceUsd.toFixed(3)}`}</Text>
@@ -87,6 +87,8 @@ const PanelFooter: React.FC<Props> = ({
         ) : (
           <Skeleton width={80} height={24} />
         )}
+      <SocialEntry>
+
         <Flex>
           {socials.map((social, index) => {
             const Icon = Icons[social.icon];
