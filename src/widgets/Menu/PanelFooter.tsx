@@ -24,7 +24,7 @@ const Container = styled.div`
   background-color: ${({ theme }) => theme.nav.background};
   border-top: solid 2px rgba(133, 133, 133, 0.1);
   background-color: #1c2c3c;
-  height: 300px;
+  height: auto;
   align-self: center;
 `;
 
@@ -109,9 +109,9 @@ const PanelFooter: React.FC<Props> = ({
   return (
     <Container>
       <TextPrimary>Presale is Live.</TextPrimary>
-      <TextPrimary>Read our Presale LitePaper</TextPrimary>
+      <TextPrimary>Read our Presale LitePaper.</TextPrimary>
 
-      <TextPrimary >Max Supply</TextPrimary>
+      <TextPrimary margin-top="10px" >Max Supply</TextPrimary>
       <TextSecondary>100,000 bYield</TextSecondary>
               
       <SocialEntry>
