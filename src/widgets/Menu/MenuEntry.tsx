@@ -29,8 +29,9 @@ const MenuEntry = styled.div<Props>`
   align-items: center;
   height: ${MENU_ENTRY_HEIGHT}px;
   padding: ${({ secondary }) => (secondary ? "0 32px" : "0 16px")};
-  font-size: ${({ secondary }) => (secondary ? "14px" : "16px")};
-  background-color: ${({ secondary, theme }) => (secondary ? theme.colors.background : "transparent")};
+  margin: ${({ secondary }) => (secondary ? "5 15px" : "5 15px")};
+  font-size: ${({ secondary }) => (secondary ? "12px" : "13px")};
+  background-color: ${({ secondary, theme }) => (secondary ? theme.colors.background : "grey")};
   color: ${({ theme }) => theme.colors.textSubtle};
   box-shadow: ${({ isActive, theme }) => (isActive ? `inset 4px 0px 0px ${theme.colors.primary}` : "none")};
 
