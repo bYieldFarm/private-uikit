@@ -23,10 +23,14 @@ const Container = styled.div`
   padding: 8px 4px;
   background-color: ${({ theme }) => theme.nav.background};
   border-top: solid 2px rgba(133, 133, 133, 0.1);
+  background-color: #1c2c3c;
+  height: 300px;
+  align-self: center;
 `;
 
 const PriceLink = styled.a`
   display: flex;
+  margin: 5px 0px;
   align-items: center;
   svg {
     transition: transform 0.3s;
@@ -38,12 +42,38 @@ const PriceLink = styled.a`
   }
 `;
 
+const TextPrimary = styled(Text)`
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  font-size: 16px;
+  color: #FFFFFF;
+  padding: 0 8px;
+  flex-direction: column;
+`;
+
+const TextSecondary = styled(Text)`
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 600;
+  color: #14A098;
+  padding: 0 8px;
+  flex-direction: column;
+  margin-top: 4px;
+`;
+
 const SettingsEntry = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: ${MENU_ENTRY_HEIGHT}px;
   padding: 0 8px;
+  flex-direction: column;
+  margin: 15px 0px;
 `;
 
 const SocialEntry = styled.div`
@@ -52,6 +82,7 @@ const SocialEntry = styled.div`
   justify-content: space-between;
   height: ${MENU_ENTRY_HEIGHT}px;
   padding: 0 16px;
+  flex-direction: column;
 `;
 
 const PanelFooter: React.FC<Props> = ({
@@ -77,8 +108,14 @@ const PanelFooter: React.FC<Props> = ({
 
   return (
     <Container>
+      <TextPrimary>Presale is Live.</TextPrimary>
+      <TextPrimary>Read our Presale LitePaper.</TextPrimary>
+
+      <TextPrimary >Max Supply</TextPrimary>
+      <TextSecondary>100,000 bYield</TextSecondary>
+              
       <SocialEntry>
-        {cakePriceUsd ? (
+      {cakePriceUsd ? (
           <PriceLink href={priceLink} target="_blank">
             <PancakeRoundIcon width="24px" mr="8px" />
             <Text color="textSubtle" bold>{`$${cakePriceUsd.toFixed(3)}`}</Text>
@@ -111,16 +148,16 @@ const PanelFooter: React.FC<Props> = ({
         </Flex>
       </SocialEntry>
       <SettingsEntry>
-        <Button variant="text" onClick={() => toggleTheme(!isDark)}>
+        {/* <Button variant="text" onClick={() => toggleTheme(!isDark)}> */}
           {/* alignItems center is a Safari fix */}
-          <Flex alignItems="center">
+          {/* <Flex alignItems="center">
             <SunIcon color={isDark ? "textDisabled" : "text"} width="24px" />
             <Text color="textDisabled" mx="4px">
               /
             </Text>
             <MoonIcon color={isDark ? "text" : "textDisabled"} width="24px" />
           </Flex>
-        </Button>
+        </Button> */}
         <Dropdown
           position="top-right"
           target={
