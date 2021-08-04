@@ -30,6 +30,7 @@ const Container = styled.div`
 
 const PriceLink = styled.a`
   display: flex;
+  margin: 5px 0px;
   align-items: center;
   svg {
     transition: transform 0.3s;
@@ -71,6 +72,8 @@ const SettingsEntry = styled.div`
   justify-content: space-between;
   height: ${MENU_ENTRY_HEIGHT}px;
   padding: 0 8px;
+  flex-direction: column;
+  margin: 15px 0px;
 `;
 
 const SocialEntry = styled.div`
@@ -106,10 +109,10 @@ const PanelFooter: React.FC<Props> = ({
   return (
     <Container>
       <TextPrimary>Presale is Live.</TextPrimary>
-      <TextPrimary>Read our Presale LitePaper Here</TextPrimary>
+      <TextPrimary>Read our Presale LitePaper</TextPrimary>
 
       <TextPrimary >Max Supply</TextPrimary>
-      <TextPrimary color="#14A098" font-size="18px">100,000 bYield</TextPrimary>
+      <TextSecondary>100,000 bYield</TextSecondary>
               
       <SocialEntry>
       {cakePriceUsd ? (
