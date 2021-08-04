@@ -24,7 +24,7 @@ const Container = styled.div`
   background-color: ${({ theme }) => theme.nav.background};
   border-top: solid 2px rgba(133, 133, 133, 0.1);
   background-color: #1c2c3c;
-  height: 350px
+  height: 350px;
   align-self: center;
 `;
 
@@ -46,7 +46,7 @@ const TextPrimary = styled(Text)`
   align-items: center;
   text-align: center;
   justify-content: space-between;
-  font-size: 12px;
+  font-size: 14px;
   color: #FFFFFF;
   padding: 0 8px;
 `;
@@ -92,7 +92,12 @@ const PanelFooter: React.FC<Props> = ({
     <Container>
       <TextPrimary>Presale is Live.</TextPrimary>
       <TextPrimary>Read our Presale LitePaper Here</TextPrimary>
-              {cakePriceUsd ? (
+
+      <TextPrimary >Max Supply</TextPrimary>
+      <TextPrimary color="#14A098" font-size="18px">100,000 bYield</TextPrimary>
+              
+      <SocialEntry>
+      {cakePriceUsd ? (
           <PriceLink href={priceLink} target="_blank">
             <PancakeRoundIcon width="24px" mr="8px" />
             <Text color="textSubtle" bold>{`$${cakePriceUsd.toFixed(3)}`}</Text>
@@ -100,8 +105,6 @@ const PanelFooter: React.FC<Props> = ({
         ) : (
           <Skeleton width={80} height={24} />
         )}
-      <SocialEntry>
-
         <Flex>
           {socials.map((social, index) => {
             const Icon = Icons[social.icon];
