@@ -51,7 +51,7 @@ const MenuEntry = styled.div<Props>`
     background-color: #0f172a;
   }
 
-  &:active {
+  &:target {
     background-color: #0f172a;
   }
 
