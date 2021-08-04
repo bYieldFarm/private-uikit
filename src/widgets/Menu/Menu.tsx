@@ -48,7 +48,7 @@ const Inner = styled.div<{ isPushed: boolean; showMenu: boolean }>`
   ${({ theme }) => theme.mediaQueries.nav} {
     margin-left: ${({ isPushed }) => `${isPushed ? SIDEBAR_WIDTH_FULL : SIDEBAR_WIDTH_REDUCED}px`};
   }
-  background-color: #0f172a;
+  height: auto;
 `;
 
 const MobileOnlyOverlay = styled(Overlay)`
