@@ -25,6 +25,7 @@ const Container = styled.div`
   border-top: solid 2px rgba(133, 133, 133, 0.1);
   background-color: #1c2c3c;
   height: 350px
+  align-self: center;
 `;
 
 const PriceLink = styled.a`
@@ -38,6 +39,16 @@ const PriceLink = styled.a`
       transform: scale(1.2);
     }
   }
+`;
+
+const TextPrimary = styled(Text)`
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #FFFFFF;
+  padding: 0 8px;
 `;
 
 const SettingsEntry = styled.div`
@@ -79,6 +90,8 @@ const PanelFooter: React.FC<Props> = ({
 
   return (
     <Container>
+      <TextPrimary>Presale is Live.</TextPrimary>
+      <TextPrimary>Read our Presale LitePaper Here</TextPrimary>
               {cakePriceUsd ? (
           <PriceLink href={priceLink} target="_blank">
             <PancakeRoundIcon width="24px" mr="8px" />
