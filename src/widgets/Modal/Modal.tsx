@@ -31,7 +31,7 @@ const StyledModal = styled.div`
 const ModalHeader = styled.div`
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #e9eaeb;
+  border-bottom: 1px solid #1c2c3c;
   align-items: center;
   padding: 12px 24px;
 `;
@@ -39,6 +39,10 @@ const ModalHeader = styled.div`
 const ModalTitle = styled(Flex)`
   align-items: center;
   flex: 1;
+`;
+
+const HeadingNew = styled(Heading)`
+  color: #1c2c3c;
 `;
 
 const Modal: React.FC<Props> = ({
@@ -57,7 +61,7 @@ const Modal: React.FC<Props> = ({
             <ArrowBackIcon color="primary" />
           </IconButton>
         )}
-        <Heading>{title}</Heading>
+        <HeadingNew>{title}</HeadingNew >
       </ModalTitle>
       {!hideCloseButton && (
         <IconButton variant="text" onClick={onDismiss} aria-label="Close the dialog">
