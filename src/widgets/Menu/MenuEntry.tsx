@@ -33,7 +33,6 @@ const MenuEntry = styled.div<Props>`
   font-size: ${({ secondary }) => (secondary ? "12px" : "13px")};
   color: ${({ theme }) => theme.colors.textSubtle};
   margin-top: 5px;
-  margin-left: 15px;
   margin-right: 15px;
 
   a {
