@@ -1553,7 +1553,7 @@ var zIndices = {
     modal: 100,
 };
 var base = {
-    siteWidth: 1800,
+    siteWidth: 1500,
     breakpoints: breakpoints,
     mediaQueries: mediaQueries,
     spacing: spacing,
@@ -2382,7 +2382,7 @@ var Container$4 = styled.div(templateObject_1$C || (templateObject_1$C = __makeT
 });
 var PriceLink = styled.a(templateObject_2$c || (templateObject_2$c = __makeTemplateObject(["\n  display: flex;\n  margin: 5px 0px;\n  align-items: center;\n  svg {\n    transition: transform 0.3s;\n  }\n  :hover {\n    svg {\n      transform: scale(1.2);\n    }\n  }\n"], ["\n  display: flex;\n  margin: 5px 0px;\n  align-items: center;\n  svg {\n    transition: transform 0.3s;\n  }\n  :hover {\n    svg {\n      transform: scale(1.2);\n    }\n  }\n"])));
 var TextPrimary = styled(Text)(templateObject_3$7 || (templateObject_3$7 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  text-align: center;\n  justify-content: space-between;\n  font-size: 16px;\n  color: #FFFFFF;\n  padding: 0 8px;\n  flex-direction: column;\n"], ["\n  display: flex;\n  align-items: center;\n  text-align: center;\n  justify-content: space-between;\n  font-size: 16px;\n  color: #FFFFFF;\n  padding: 0 8px;\n  flex-direction: column;\n"])));
-var TextSecondary = styled(Text)(templateObject_4$3 || (templateObject_4$3 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  text-align: center;\n  justify-content: space-between;\n  font-size: 18px;\n  font-weight: 600;\n  color: #14A098;\n  padding: 0 8px;\n  flex-direction: column;\n  margin-top: 4px;\n"], ["\n  display: flex;\n  align-items: center;\n  text-align: center;\n  justify-content: space-between;\n  font-size: 18px;\n  font-weight: 600;\n  color: #14A098;\n  padding: 0 8px;\n  flex-direction: column;\n  margin-top: 4px;\n"])));
+var TextSecondary = styled(Text)(templateObject_4$3 || (templateObject_4$3 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  text-align: center;\n  justify-content: space-between;\n  font-size: 18px;\n  font-weight: 600;\n  color: #14A098;\n  padding: 0 8px;\n  flex-direction: column;\n  margin-top: 4px;\n  margin-bottom: 4px;\n"], ["\n  display: flex;\n  align-items: center;\n  text-align: center;\n  justify-content: space-between;\n  font-size: 18px;\n  font-weight: 600;\n  color: #14A098;\n  padding: 0 8px;\n  flex-direction: column;\n  margin-top: 4px;\n  margin-bottom: 4px;\n"])));
 var SettingsEntry = styled.div(templateObject_5$1 || (templateObject_5$1 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 8px;\n  flex-direction: column;\n  margin: 15px 0px;\n"], ["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 8px;\n  flex-direction: column;\n  margin: 15px 0px;\n"])), MENU_ENTRY_HEIGHT);
 var SocialEntry = styled.div(templateObject_6 || (templateObject_6 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 16px;\n  flex-direction: column;\n"], ["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 16px;\n  flex-direction: column;\n"])), MENU_ENTRY_HEIGHT);
 var PanelFooter = function (_a) {
@@ -2396,7 +2396,7 @@ var PanelFooter = function (_a) {
         React.createElement(TextPrimary, null, "Presale is Live."),
         React.createElement(TextPrimary, null, "Read our Presale LitePaper."),
         React.createElement(TextPrimary, null, "Max Supply"),
-        React.createElement(TextSecondary, null, "100,000 bYield"),
+        React.createElement(TextSecondary, null, "300,000 bYield"),
         React.createElement(SocialEntry, null,
             cakePriceUsd ? (React.createElement(PriceLink, { href: priceLink, target: "_blank" },
                 React.createElement(Icon$v, { width: "24px", mr: "8px" }),

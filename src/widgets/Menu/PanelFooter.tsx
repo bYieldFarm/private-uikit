@@ -64,6 +64,7 @@ const TextSecondary = styled(Text)`
   padding: 0 8px;
   flex-direction: column;
   margin-top: 4px;
+  margin-bottom: 4px;
 `;
 
 const SettingsEntry = styled.div`
@@ -112,7 +113,7 @@ const PanelFooter: React.FC<Props> = ({
       <TextPrimary>Read our Presale LitePaper.</TextPrimary>
 
       <TextPrimary >Max Supply</TextPrimary>
-      <TextSecondary>100,000 bYield</TextSecondary>
+      <TextSecondary>300,000 bYield</TextSecondary>
               
       <SocialEntry>
       {cakePriceUsd ? (
