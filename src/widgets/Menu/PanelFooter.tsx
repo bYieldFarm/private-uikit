@@ -110,10 +110,10 @@ const PanelFooter: React.FC<Props> = ({
   return (
     <Container>
       <TextPrimary>Presale is Live.</TextPrimary>
-      <TextPrimary>Read our Presale LitePaper.</TextPrimary>
+      <TextPrimary><a href="https://app.gitbook.com/@byieldfarm/s/byield-finance/launch-details/supplementary-information-regarding-yield-farms">Read our Presale LitePaper.</a></TextPrimary>
 
       <TextPrimary >Max Supply</TextPrimary>
-      <TextSecondary>300,000 bYield</TextSecondary>
+      <TextSecondary>500,000 bYield</TextSecondary>
               
       <SocialEntry>
       {cakePriceUsd ? (
