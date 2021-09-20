@@ -41,7 +41,7 @@ const Panel: React.FC<Props> = (props) => {
     <StyledPanel isPushed={isPushed} showMenu={showMenu}>
       <PanelBody {...props} />
       <a href="https://paladinsec.co/projects/byield-finance/" target="_blank"><img src="https://paladinsec.co/pld/assets/audited-by-paladin-standard.svg" width="370"/></a>
-      <a href="https://rugdoc.io/project/byield-finance/">
+      <a href="https://rugdoc.io/assets/2021/05/rugdoc-review-badge-for-light-bg.png">
         <Image src="/images/RugDoc.png" width={370} height={121} responsive alt="RugDocReview" />
       </a>
       <PanelFooter {...props} />
