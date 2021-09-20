@@ -2397,7 +2397,7 @@ var Panel = function (props) {
         React.createElement("a", { href: "https://paladinsec.co/projects/byield-finance/", target: "_blank" },
             React.createElement("img", { src: "https://paladinsec.co/pld/assets/audited-by-paladin-standard.svg", width: "370" })),
         React.createElement("a", { href: "https://rugdoc.io/project/byield-finance/" },
-            React.createElement(Image, { src: "public/RugDoc.png", width: 370, height: 121, responsive: true, alt: "RugDocReview" })),
+            React.createElement(Image, { src: "images/RugDoc.png", width: 370, height: 121, responsive: true, alt: "RugDocReview" })),
         React.createElement(PanelFooter, __assign({}, props))));
 };
 var templateObject_1$D;

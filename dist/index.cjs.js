@@ -2410,7 +2410,7 @@ var Panel = function (props) {
         React__default['default'].createElement("a", { href: "https://paladinsec.co/projects/byield-finance/", target: "_blank" },
             React__default['default'].createElement("img", { src: "https://paladinsec.co/pld/assets/audited-by-paladin-standard.svg", width: "370" })),
         React__default['default'].createElement("a", { href: "https://rugdoc.io/project/byield-finance/" },
-            React__default['default'].createElement(Image, { src: "public/RugDoc.png", width: 370, height: 121, responsive: true, alt: "RugDocReview" })),
+            React__default['default'].createElement(Image, { src: "images/RugDoc.png", width: 370, height: 121, responsive: true, alt: "RugDocReview" })),
         React__default['default'].createElement(PanelFooter, __assign({}, props))));
 };
 var templateObject_1$D;
