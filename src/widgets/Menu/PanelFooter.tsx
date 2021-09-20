@@ -24,7 +24,7 @@ const Container = styled.div`
   background-color: ${({ theme }) => theme.nav.background};
   border-top: solid 2px rgba(133, 133, 133, 0.1);
   background-color: #1c2c3c;
-  height: 300px;
+  height: 250px;
   align-self: center;
 `;
 
