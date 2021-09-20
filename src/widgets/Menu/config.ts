@@ -122,6 +122,10 @@ export const socials = [
         label: "English",
         href: "https://t.me/byieldfinance",
       },
+      {
+        label: "Chinese",
+        href: "https://t.me/bYield_Finance_Chinese",
+      },
     ],
   },
   {

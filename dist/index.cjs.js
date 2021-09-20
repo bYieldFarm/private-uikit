@@ -2228,6 +2228,10 @@ var socials = [
                 label: "English",
                 href: "https://t.me/byieldfinance",
             },
+            {
+                label: "Chinese",
+                href: "https://t.me/bYield_Finance_Chinese",
+            },
         ],
     },
     {
@@ -2403,6 +2407,10 @@ var Panel = function (props) {
     var isPushed = props.isPushed, showMenu = props.showMenu;
     return (React__default['default'].createElement(StyledPanel, { isPushed: isPushed, showMenu: showMenu },
         React__default['default'].createElement(PanelBody, __assign({}, props)),
+        React__default['default'].createElement("a", { href: "https://paladinsec.co/projects/byield-finance/", target: "_blank" },
+            React__default['default'].createElement("img", { src: "https://paladinsec.co/pld/assets/audited-by-paladin-standard.svg", width: "200" })),
+        React__default['default'].createElement("a", { href: "https://rugdoc.io/project/byield-finance/" },
+            React__default['default'].createElement(Image, { src: "https://rugdoc.io/assets/2021/05/rugdoc-review-badge-for-light-bg.png", width: 370, height: 121, responsive: true, alt: "RugDocReview" })),
         React__default['default'].createElement(PanelFooter, __assign({}, props))));
 };
 var templateObject_1$D;
