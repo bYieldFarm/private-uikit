@@ -42,7 +42,7 @@ const Panel: React.FC<Props> = (props) => {
       <PanelBody {...props} />
       <a href="https://paladinsec.co/projects/byield-finance/" target="_blank"><img src="https://paladinsec.co/pld/assets/audited-by-paladin-standard.svg" width="370"/></a>
       <a href="https://rugdoc.io/project/byield-finance/">
-        <Image src="https://rugdoc.io/assets/2021/05/rugdoc-review-badge-for-light-bg.png" width={370} height={121} responsive alt="RugDocReview" />
+        <Image src="public/RugDoc.png" width={370} height={121} responsive alt="RugDocReview" />
       </a>
       <PanelFooter {...props} />
     </StyledPanel>
